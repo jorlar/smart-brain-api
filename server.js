@@ -11,9 +11,10 @@ const db = knex({
   // Enter your own database information here based on what you created
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
-    user : 'jornlarsen',
-    password : '',
+    host : 'smart-brain-do-user-13093912-0.b.db.ondigitalocean.com',
+    user : 'doadmin',
+    password : 'AVNS_iS-Tk9GZwEipRAeQ1MU',
+    port: 25060,
     database : 'smart-brain'
   }
 });
