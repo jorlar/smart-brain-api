@@ -24,10 +24,8 @@ const app = express();
 app.use(cors())
 app.use(express.json()); 
 
-// Test only - when you have a database variable you want to use
-// app.get('/', (req, res)=> {
-//   res.send(database.users);
-// })
+
+app.get('/', (req, res)=> {res.send('it is working');})
 
 app.post('/signin', (req, res) => {signin.handleSignin(req,res, db, bcrypt)})
 
