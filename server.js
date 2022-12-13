@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const bcrypt = require('bcrypt-nodejs');
 
 const app = express();
 app.use(bodyParser.json())
@@ -45,6 +46,9 @@ app.post('/signin', (req, res) => {
 
 app.post('/register', (req, res) => {
     const { email, name, password} = req.body;
+    bcrypt.hash(password, null, null, function(err, hash) {
+        // Store hash in you psw db.
+    })
     database.users.push({
         id: '125',
         name: name,

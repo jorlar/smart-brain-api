@@ -9,6 +9,7 @@
   "author": "Jorn Larsen",
   "license": "ISC",
   "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.20.1",
     "express": "^4.18.2",
     "nodemon": "^2.0.20"
