@@ -15,7 +15,8 @@ const db = knex({
     user : 'doadmin',
     password : 'AVNS_iS-Tk9GZwEipRAeQ1MU',
     port: 25060,
-    database : 'smart-brain'
+    database : 'smart-brain',
+    sslmode: 'require'
   }
 });
 
